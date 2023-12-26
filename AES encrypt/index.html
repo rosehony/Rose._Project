@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure File Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure File Encryption</h1>
+
+        <div class="input-container">
+            <label for="fileInput">Select File:</label>
+            <input type="file" id="fileInput" />
+        </div>
+
+        <div class="input-container">
+            <label for="encryptionKey">Encryption Key:</label>
+            <input type="password" id="encryptionKey" />
+        </div>
+
+        <div class="button-container">
+            <button onclick="processFile('encrypt')">Encrypt File</button>
+            <button onclick="processFile('decrypt')">Decrypt File</button>
+        </div>
+
+        <div id="statusMessage" class="status-message"></div>
+        <div id="loadingSpinner" class="loading-spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
