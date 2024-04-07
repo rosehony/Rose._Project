@@ -1,0 +1,41 @@
+Network Anomaly Detection System
+
+This project implements a real-time network anomaly detection system using Python and machine learning techniques. 
+The system monitors network traffic, analyzes packet arrival rates and sizes, and identifies anomalies that may indicate potential security threats.
+
+Table of Contents
+1. [Introduction]
+2. [Methodology]
+3. [Output and Results]
+4. [Conclusion]
+5. [Usage]
+6. [Dependencies]
+
+Introduction
+Network security is of paramount importance in today's digital age, with cyber threats becoming increasingly sophisticated. 
+This project aims to develop an effective anomaly detection system that can proactively identify potential security breaches in real-time network traffic.
+
+Methodology
+The system utilizes packet capture techniques to intercept and analyze network packets.
+Real-time analysis of packet arrival rates and sizes is performed, and anomalies are detected using machine learning algorithms, specifically the Isolation Forest algorithm.
+
+Output and Results
+The system outputs information about detected anomalies, including packet arrival rates, source IP addresses, and packet details. 
+Visualization tools are used to illustrate anomalies plotted against packet sizes.
+
+Conclusion
+The network anomaly detection system demonstrates its effectiveness in identifying potential security threats through real-time monitoring and analysis of network traffic. 
+Further refinement and integration of the system are essential for enhancing network security and mitigating cyber risks.
+
+Usage
+To use the network anomaly detection system, follow these steps:
+1. Clone the repository to your local machine.
+2. Install the required dependencies (see Dependencies section).
+3. Run the main script `network_anomaly_detection.py` to start monitoring network traffic and detecting anomalies.
+
+Dependencies
+- Python 3.x
+- Scapy
+- scikit-learn
+
+
