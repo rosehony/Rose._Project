@@ -1,0 +1,24 @@
+<!-- decryption.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decryption</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Decryption</h2>
+        <form action="{{ url_for('decrypt_text') }}" method="POST"> <!-- Changed action to 'encrypt_text' -->
+            <label for="text">Enter text to decrypt:</label>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Decrypt">
+        </form>
+        <a href="{{ url_for('encrypt_text') }}"><button type="button">Encrypt</button></a>
+        {% if decrypted_result %}
+        <p>Decrypted Result: {{ decrypted_result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
